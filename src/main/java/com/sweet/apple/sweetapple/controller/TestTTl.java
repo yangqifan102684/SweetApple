@@ -62,6 +62,7 @@ public class TestTTl {
             c2.countDown();
         });
         c2.await();
+        executorService.shutdownNow();
     }
     // ITL测试
     private static void itlTestThreadPoolTest() {
